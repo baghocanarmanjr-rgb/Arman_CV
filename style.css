@@ -411,35 +411,43 @@ button {
   margin-top: 7px;
 }
 
-.skill+.skill {
-  margin-top: 18px;
+/* SKILLS */
+
+.skills-group+.skills-group {
+  margin-top: 24px;
 }
 
-.skill-label {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 7px;
+.skills-group h4 {
+  margin-bottom: 12px;
   color: var(--navy);
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-.skill-label span:last-child {
-  color: var(--muted);
-  font-weight: 500;
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.skill-bar {
-  height: 9px;
-  overflow: hidden;
+.skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border: 1px solid #dbe4f3;
   border-radius: 999px;
-  background: #e8edf5;
+  background: #f3f6fc;
+  color: #40506b;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 
-.skill-bar span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, #356df3, #4b7df6);
+.skill-tags span:hover {
+  background: #e8efff;
+  border-color: #b9ccfb;
+  color: var(--blue);
+  transform: translateY(-2px);
 }
 
 .contact-list {
