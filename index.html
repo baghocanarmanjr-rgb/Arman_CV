@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal CV webpage for a student portfolio." />
+  <title>Your Name | Personal CV</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="#home" aria-label="Go to home">MyCV</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1>Arman Jr. M. Baghocan</h1>
+          <h2>BS Information Technology Student</h2>
+          <p class="hero-description">
+            A motivated student who enjoys learning technology, solving problems,
+            and creating simple and useful digital experiences.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="printCvBtn">
+              <span aria-hidden="true">↓</span>
+              Print / Save CV
+            </button>
+            <a class="btn btn-outline" href="#contact">
+              <span aria-hidden="true">✉</span>
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrap reveal">
+          <div class="photo-ring">
+            <img src="assets/arman.png" alt="Profile photo placeholder" class="profile-photo" />
+          </div>
+
+          <div class="hero-note" aria-hidden="true">
+            <span>Learn.</span>
+            <span>Create.</span>
+            <span>Improve.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content-section">
+      <div class="container cv-grid">
+
+        <div class="column">
+          <article class="card reveal" id="about">
+            <div class="section-heading">
+              <div class="icon-box">
+                <img src="https://img.icons8.com/?size=100&amp;id=bZGWfxY6L1f0&amp;format=png&amp;color=000000"
+                  alt="About Me icon" class="section-icon">
+              </div>
+              <h3>About Me</h3>
+            </div>
+
+            <p>
+              I am a college student currently taking Bachelor of Science in
+              Information Technology. I am, technology, and improving my
+              problem-solving skills. I enjoy
+              technology, and improving my problem-solving skills. I enjoy
+              learning new tools and creating projects that are simple,
+              functional, and easy to use.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="section-heading">
+              <div class="icon-box">
+                <img src="https://img.icons8.com/?size=100&id=o6Ajk9a8QgwE&format=png&color=000000"
+                  class="section-icon">
+              </div>
+              <h3>Personal Information</h3>
+            </div>
+
+            <div class="info-list">
+              <div>
+                <span class="info-label">Year Level</span>
+                <span>4th Year</span>
+              </div>
+              <div>
+                <span class="info-label">Set / Section</span>
+                <span>Set B</span>
+              </div>
+              <div>
+                <span class="info-label">Course</span>
+                <span>BS Information Technology</span>
+              </div>
+              <div>
+                <span class="info-label">Location</span>
+                <span>Davao del Norte, Philippines</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="column">
+          <article class="card reveal" id="education">
+            <div class="section-heading">
+              <div class="icon-box">
+                <img src="https://img.icons8.com/?size=100&id=r12y281cLkO9&format=png&color=000000"
+                  class="section-icon">
+              </div>
+              <h3>Education</h3>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <div class="timeline-title-row">
+                    <h4>College</h4>
+                    <span>Present</span>
+                  </div>
+                  <p>Bachelor of Science in Information Technology</p>
+                  <small>Davao del Norte State College</small>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <div class="timeline-title-row">
+                    <h4>Senior High School</h4>
+                    <span>2021 – 2023</span>
+                  </div>
+                  <p>Electrical Installation and Maintennace</p>
+                  <small>Panabo City National High School</small>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <div class="timeline-title-row">
+                    <h4>Junior High School</h4>
+                    <span>2017 – 2021</span>
+                  </div>
+                  <p>Secondary Education</p>
+                  <small>Panabo National High School</small>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="section-heading">
+              <div class="icon-box">
+                <img src="https://img.icons8.com/?size=100&id=zfPlQQg1qfry&format=png&color=000000"
+                  class="section-icon">
+              </div>
+              <h3>Highlights</h3>
+            </div>
+
+            <ul class="achievement-list">
+              <li>Currently pursuing a BS Information Technology degree</li>
+              <li>Comfortable working with basic computer applications</li>
+              <li>Willing to learn new technologies and improve skills</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="column">
+          <article class="card reveal" id="skills">
+            <div class="section-heading">
+              <div class="icon-box">
+                <img src="https://img.icons8.com/?size=100&id=YIZ59MTJsuUz&format=png&color=000000"
+                  class="section-icon">
+              </div>
+              <h3>Skills</h3>
+            </div>
+
+            <div class="skill">
+              <div class="skill-label">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar"><span style="width: 85%"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-label">
+                <span>CSS</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar"><span style="width: 80%"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-label">
+                <span>JavaScript</span>
+                <span>50%</span>
+              </div>
+              <div class="skill-bar"><span style="width: 70%"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-label">
+                <span>Problem Solving</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar"><span style="width: 80%"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-label">
+                <span>Communication</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar"><span style="width: 85%"></span></div>
+            </div>
+          </article>
+
+          <article class="card reveal" id="contact">
+            <div class="section-heading">
+              <div class="icon-box">
+                <img src="https://img.icons8.com/?size=100&id=114049&format=png&color=000000" class="section-icon">
+              </div>
+              <h3>Contact Me</h3>
+            </div>
+
+            <div class="contact-list">
+
+              <!-- Email -->
+              <a href="mailto:armanbaghocan2@gmail.com">
+                <img src="https://img.icons8.com/ios/50/new-post--v1.png" alt="Email" class="contact-icon">
+                armanbaghocan2@gmail.com
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:+639386003773">
+                <img src="https://img.icons8.com/ios/50/phone.png" alt="Phone" class="contact-icon">
+                +63 938 600 3773
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/baghocanarmanjr-rgb" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/ios/50/github--v1.png" alt="GitHub" class="contact-icon">
+                github.com/baghocanarmanjr-rgb
+              </a>
+
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/juniorarman.baghocan/" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/ios/50/facebook-new.png" alt="Facebook" class="contact-icon">
+                Arman Jr. M. Baghocan
+              </a>
+
+            </div>
+
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="currentYear"></span> Arman Jr. M. Baghocan. Personal CV Page.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
